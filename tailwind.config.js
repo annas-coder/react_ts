@@ -10,6 +10,9 @@ export default {
     extend: {
       colors:{
         'red':"red"
+      },
+      width:{
+        '80':'80% '
       }
     },
   },
