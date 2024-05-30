@@ -4,21 +4,33 @@ export const App: React.FC = (): JSX.Element => {
   return (
     <div className='bg-grey-500 w-full h-screen bg-gray-100 flex'>
       <Header/>          
-
     </div>
   ); 
 };
 
 export const Header : React.Fc = () :JSX.Element =>{
   return(
-      <div className='h-1/2 w-6/12 gap-5 m-auto bg-gray-600'>
-              <div className='flex m-8 justify-between'>
+      <div className='min-1/2 lg:w-6/12 sm:w-full gap-5 m-auto bg-card'>
+              <div className='lg:flex m-8 justify-between'>
                <h3 className='text-2xl'>TodoList</h3>
-                <span className='w-80 flex gap-4'>
+                <span className='lg:w-80 sm:w-full flex gap-4'>
                   <input type="text" name="" id="" className='w-full rounded-sm outline-none px-2' />
-                  <input type="submit" value="Submit" className='btn border-solid border-2 border-sky-500 bg-white px-3 py-1 rounded-lg' />
+                  <input type="submit" value="Submit" className='btn btn-blue'/>
                 </span>
               </div>
+
+      
+      <div className="container">
+              <ul className='mx-10'>
+                 <li className='my-3 p-3 bg-white rounded-sm flex '>
+                   testing
+                    <span className='ms-auto'>
+                      <button className='px-4 py-1 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-500 '>Delete</button>
+                    </span>
+                 </li>
+              </ul>
+      </div>
+     
       </div>
   )
 }
